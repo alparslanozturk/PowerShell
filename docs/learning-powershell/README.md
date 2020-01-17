@@ -90,6 +90,7 @@ Note that all bash commands should continue working on PowerShell session.
 | find -name build*               | Get-ChildItem build* -Recurse           | Find a file or folder starting with 'build'
 | grep -Rin "sometext" --include="*.cs" |Get-ChildItem -Recurse -Filter *.cs <br> \| Select-String -Pattern "sometext" | Recursively case-insensitive search for text in files
 | curl https://github.com         | Invoke-RestMethod https://github.com    | Transfer data to or from the web
+| xargs                           | docker ps --quiet | ForEach-Object {docker stop $_} |
 
 ### Recommended Training and Reading
 
